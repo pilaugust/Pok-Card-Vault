@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     margin: 0;
+    background-color: white;
 }
 
 .mainContent{
@@ -58,7 +59,7 @@ body{
 }
 
 .card-image{
-    height: 300px;
+    height: fit-content;
     width: 100%;
     object-fit: contain;
 }
@@ -125,9 +126,10 @@ body{
 
 .loginContainer{
     width: 30vw;
-    height: 65vh;
+    height: fit-content;
     margin-top: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -189,7 +191,7 @@ body{
 .navbar{
     width: 100vw;
     background-color: white;
-    height: 50px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -204,17 +206,27 @@ body{
     font-family: "Roboto", sans-serif;
     cursor: pointer;
     transition-duration: 0.3s;
-    width: 25vh;
+    width: fit-content;
+    height: 100%;
     padding: 20px;
     font-size: 16px;
     font-weight: 700;
     color: rgb(140, 17, 255);
 }
 
-@media (max-width: 600px) {
+.pageInfo{
+    width: 100%;
+    padding-left: 10%;
+}
+
+@media (max-width: 1000px) {
     .navBtn{
         font-size: 10px;
         height: 100%;
+    }
+
+    .loginContainer{
+        width: 90vw;
     }
     
     #search{
@@ -235,7 +247,7 @@ body{
     }
 
     .displayedSets{
-        grid-template-columns: auto;
+        grid-template-columns: auto !important;
         width: 100%;
     }
 
@@ -243,6 +255,25 @@ body{
         max-width: 100px;
         transition-duration: 0.3s;
         margin-right: 30px;
+        padding-right: 10%;
+    }
+
+    .displayedCards{
+        display: grid;
+        grid-template-columns: auto !important;
+    }
+
+    .sets1, .sets2, .sets3, .sets4, .sets5, .sets6, .sets7, .sets8, .sets9, .sets10, .sets11{
+        display: grid;
+        grid-template-columns: auto !important;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .headerText{
@@ -332,7 +363,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 85px;
 }
 
 #myCollectionDisplay{
@@ -408,7 +439,7 @@ body{
 #search{
     outline: none;
     border: none;
-    width: 50vw;
+    width: 100%;
     font-family: "Roboto", sans-serif;
     padding: 20px;
     background-color: white;
@@ -531,6 +562,7 @@ body{
     font-family: "Coiny", sans-serif;
     color: white;
     font-size: 50px;
+    text-align: center;
     margin-left: 5px;
 }
 
