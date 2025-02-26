@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéCard Vault - Sets</title>
+    <link rel="icon" href="./images/pokeball.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="sets.js" defer></script>
+    <script src="search.js" defer></script>
+
+</head>
+<body>
+    <div class="mainContent">
+        
+            <div class="navbar">
+                <button class="navBtn" id="home" onclick="window.location.href='index.html';">HOME</button>
+                <button class="navBtn" id="collection" onclick="window.location.href='mycollection.html';">MY COLLECTION</button>
+                <button class="navBtn" id="browse" onclick="window.location.href='browse.html';">BROWSE SETS</button>
+
+                <input type="text" name="search" id="search" placeholder="Search..." autocomplete="off">
+                <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+                <button class="navBtn" id="loginNav" onclick="window.location.href='login.html';">LOG IN</button>
+            </div>
+            <div class="informationContainer">
+                <div class="informationContainer2">
+                    <div id="set-details">
+                        <h2 id="set-name"></h2>
+                        <img id="set-logo" src="" alt="Set Logo">
+                        <p id="set-release"></p>
+                        <p id="total-cards"></p>
+                
+                        <h3 class="h3Cards">Cards in this set:</h3>
+                        <div id="cards-container"></div> <!-- Will hold the card details -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer">
+                <p class="footerText">Rights belong to ©2025 Pokémon. ©1995 - 2025 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.</p>
+                <p class="footerText">Not official, sponsored by or in any way associated with the Pokémon company.</p>
+            </div>
+        </div>
+
+    
+</body>
+</html>

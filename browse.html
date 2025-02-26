@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéCard Vault - Browse</title>
+    <link rel="icon" href="./images/pokeball.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="sets.js" defer></script>
+    <script src="search.js" defer></script>
+
+</head>
+<body>
+    <div class="mainContent">
+        
+            <div class="navbar">
+                <button class="navBtn" id="home" onclick="window.location.href='index.html';">HOME</button>
+                <button class="navBtn" id="collection" onclick="window.location.href='mycollection.html';">MY COLLECTION</button>
+                <button class="navBtn" id="browse" onclick="window.location.href='browse.html';">BROWSE SETS</button>
+
+                <input type="text" name="search" id="search" placeholder="Search..." autocomplete="off">
+                <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+                <button class="navBtn" id="loginNav" onclick="window.location.href='login.html';">LOG IN</button>
+            </div>
+            <div class="informationContainer">
+                <div class="informationContainer2">
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Scarlet & Violet</h2>
+                    </div>
+                    <div class="sets1"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Sword & Shield</h2>
+                    </div>
+                    <div class="sets2"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Sun & Moon</h2>
+                    </div>
+                    <div class="sets3"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">XY</h2>
+                    </div>
+                    <div class="sets4"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Black & White</h2>
+                    </div>
+                    <div class="sets5"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Heartgold & Soulsilver</h2>
+                    </div>
+                    <div class="sets6"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Diamond & Pearl</h2>
+                    </div>
+                    <div class="sets7"></div>
+
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Platinum</h2>
+                    </div>
+                    <div class="sets8"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">EX</h2>
+                    </div>
+                    <div class="sets9"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Base</h2>
+                    </div>
+                    <div class="sets10"></div>
+                
+                    <div class="browseContainer">
+                        <h2 class="headerText3">Other</h2>
+                    </div>
+                    <div class="sets11"></div>
+                </div>                
+            </div>
+            <div class="footer">
+                <p class="footerText">Rights belong to ©2025 Pokémon. ©1995 - 2025 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.</p>
+                <p class="footerText">Not official, sponsored by or in any way associated with the Pokémon company.</p>
+            </div>
+        </div>
+    </body>
+    </html>

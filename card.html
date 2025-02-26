@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéCard Vault - Cards</title>
+    <link rel="icon" href="./images/pokeball.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="sets.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="card.js" defer></script>
+    <script src="collection.js" defer></script>
+
+</head>
+<body>
+    <div class="mainContent">
+        
+            <div class="navbar">
+                <button class="navBtn" id="home" onclick="window.location.href='index.html';">HOME</button>
+                <button class="navBtn" id="collection" onclick="window.location.href='mycollection.html';">MY COLLECTION</button>
+                <button class="navBtn" id="browse" onclick="window.location.href='browse.html';">BROWSE SETS</button>
+
+                <input type="text" name="search" id="search" placeholder="Search..." autocomplete="off">
+                <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+                <button class="navBtn" id="loginNav" onclick="window.location.href='login.html';">LOG IN</button>
+            </div>
+            <div class="informationContainer">
+                <div class="informationContainer2">
+                    <div id="card-details">
+                        <h2 id="card-name" class="cardInfoH">Card Name</h2>
+                        <img id="card-image" src="" alt="Card Image" class="cardInfo">
+                        <p id="card-rarity" class="cardInfo">Rarity: </p>
+                        <p id="card-types" class="cardInfo">Types: </p>
+                        <p id="card-attacks" class="cardInfo">Attacks: </p>
+                        <p id="card-evolves-from" class="cardInfo">Evolves From: </p>
+                        <button id="add-to-collection" class="cardInfoBtn">Add to Collection</button> <!-- Add this button -->
+                        <div id="message"></div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="footer">
+                <p class="footerText">Rights belong to ©2025 Pokémon. ©1995 - 2025 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.</p>
+                <p class="footerText">Not official, sponsored by or in any way associated with the Pokémon company.</p>
+            </div>
+        </div>
+
+    
+</body>
+</html>

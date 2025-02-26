@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéCard Vault - Sign in</title>
+    <link rel="icon" href="./images/pokeball.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js" defer></script>
+    <script src="search.js" defer></script>
+</head>
+<body>
+    <div class="mainContent">
+        
+            <div class="navbar">
+                <button class="navBtn" id="home" onclick="window.location.href='index.html';">HOME</button>
+                <button class="navBtn" id="collection" onclick="window.location.href='mycollection.html';">MY COLLECTION</button>
+                <button class="navBtn" id="browse" onclick="window.location.href='browse.html';">BROWSE SETS</button>
+
+                <input type="text" name="search" id="search" placeholder="Search..." autocomplete="off">
+                <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+                <button class="navBtn" id="loginNav" onclick="window.location.href='login.html';">LOG IN</button>
+            </div>
+            <div class="informationContainer">
+                <div class="informationContainer2">
+                    <div class="loginContainer">
+                        <h1 class="login1">Sign in</h1>
+                        <input type="email" name="login" id="login" placeholder="Username">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <a href="" class="login3" id="forgot">Forgot password?</a>
+                        <button class="loginBtn" id="signIn">Sign in</button>
+                        <h4 class="login2">Don't have an account?</h4>
+                        <a href="" class="login3" id="register">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="footerText">Rights belong to ©2025 Pokémon. ©1995 - 2025 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.</p>
+                <p class="footerText">Not official, sponsored by or in any way associated with the Pokémon company.</p>
+            </div>
+        </div>
+    </body>
+    </html>

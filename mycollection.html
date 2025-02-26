@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéCard Vault - My Collection</title>
+    <link rel="icon" href="./images/pokeball.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="search.js" defer></script>
+    <script src="collection.js" defer></script>
+</head>
+<body>
+    <div class="mainContent">
+        <div class="frontPage">
+            <div class="navbar">
+                <button class="navBtn" id="home" onclick="window.location.href='index.html';">HOME</button>
+                <button class="navBtn" id="collection" onclick="window.location.href='mycollection.html';">MY COLLECTION</button>
+                <button class="navBtn" id="browse" onclick="window.location.href='browse.html';">BROWSE SETS</button>
+                <input type="text" name="search" id="search" placeholder="Search..." autocomplete="off">
+                <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+                <button class="navBtn" id="loginNav" onclick="window.location.href='login.html';">LOG IN</button>
+            </div>
+            <div class="informationContainer3">
+                <div class="myCollection">
+                    <h1 class="headerText3">My collection</h1>
+                    <div class="sortBy" id="sortCollection">
+                        <label for="sortOptions">Sort By:</label>
+                        <select id="sortOptions">
+                            <option value="name">Name</option>
+                            <option value="date">Date Added</option>
+                        </select>
+                        <label for="sortOrder">Order:</label>
+                        <select id="sortOrder">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div> 
+                    <div class="displayedCards" id="myCollectionDisplay">
+                        <div class="sortBy" id="sortCollection">
+                            <div id="collectionContainer"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+            <div class="footer">
+                <p class="footerText">Rights belong to ©2025 Pokémon. ©1995 - 2025 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.</p>
+                <p class="footerText">Not official, sponsored by or in any way associated with the Pokémon company.</p>
+            </div>
+
+</body>
+</html>

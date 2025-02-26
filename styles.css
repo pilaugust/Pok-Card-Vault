@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+}
+
+.mainContent{
+    height: fit-content;
+}
+
+.frontPage{
+    background-color: rgb(140, 17, 255);
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 50px;
+    gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+#sortCollection{
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+#sortOptions{
+    font-family: "Roboto", sans-serif;
+}
+
+.sortBy{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.card-image{
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.searchResultT{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+    color: white;
+    font-family: "Coiny", sans-serif;
+}
+
+.cardImageSearch{
+    max-width: 200px;
+    margin: 0;
+}
+
+.cardSearchP{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width: 180px;
+}
+
+.frontPageSub{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.informationContainer{
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informationContainer2{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(140, 17, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.informationContainer3{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(140, 17, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+    padding-bottom: 50px;
+}
+
+.loginContainer{
+    width: 30vw;
+    height: 65vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+#login{
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#password{
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.login1{
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+
+}
+
+.login2{
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.login3{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.loginBtn{
+    width: 100px;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(140, 17, 255);
+    color: white;
+    font-size: 16px;
+}
+
+.navbar{
+    width: 100vw;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+}
+
+
+.navBtn{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    width: 25vh;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(140, 17, 255);
+}
+
+@media (max-width: 600px) {
+    .navBtn{
+        font-size: 10px;
+        height: 100%;
+    }
+    
+    #search{
+        font-size: 10px;
+        max-width: 90px;
+    }
+    
+    .frontPageSub{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0px;
+        padding-left: 10px;
+        padding-right: 20px;
+        height: 100vh;
+    }
+
+    .displayedSets{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    .pikachu{
+        max-width: 100px;
+        transition-duration: 0.3s;
+        margin-right: 30px;
+    }
+
+    .headerText{
+        font-size: 40px !important;
+    }
+
+    .headerText2{
+        font-size: 16px !important;
+    }
+
+    .navbar{
+        height: 80px;
+    }
+}
+
+#cards-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 20px;
+    gap: 10px;
+    width: 90%;
+}
+
+.viewCardsBtn{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(140, 17, 255);
+    color: white;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+
+.cardInfoBtn{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    margin-bottom: 20px
+}
+
+.setText{
+    font-family: "Roboto", sans-serif;
+    color: rgb(140, 17, 255);
+}
+
+.cardInfoBtn:hover{
+    background-color: rgb(224, 191, 255);
+}
+
+.card-name{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.card-nameS{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#set-name{
+    font-family: "Coiny", sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+#set-logo{
+    width: 50px;
+}
+
+.myCollection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+
+#myCollectionDisplay{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+}
+
+.h3Cards{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+#set-release{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+#total-cards{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.viewCardDetailsBtn{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.viewCardDetailsBtn:hover{
+    background-color: rgb(224, 191, 255);
+}
+
+.viewCardDetailsBtn2{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.viewCardDetailsBtn2:hover{
+    background-color: rgb(224, 191, 255);
+}
+
+#set-details{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.viewCardsBtn:hover{
+    background-color: rgb(177, 94, 255);
+}
+
+#search{
+    outline: none;
+    border: none;
+    width: 50vw;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    background-color: white;
+    transition-duration: 0.3s;
+    font-size: 16px;
+}
+
+.searchResultCount {
+    font-size: 16px; /* Make the text smaller */
+    font-family: "Roboto", sans-serif;
+    color: white; /* Color for the result count */
+    z-index: 1000;
+    position: absolute;
+    top: 135px; /* Position the element below the "Please wait" message */
+    left: 450px; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    text-align: start;
+    margin-top: 10px; /* Add some space between the main text and the result count */
+    width: 800px;
+}
+
+
+
+.autocomplete-suggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    width: 805px;
+    max-height: 350px;
+    z-index: 1000; /* Ensure this is on top */
+    display: none;  /* Default state: hidden */
+    font-family: "Roboto", sans-serif;
+    top: 60px;
+    left: 547px;
+}
+
+.collectText{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.cardInfoH{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#card-name{
+    font-family: "Coiny", sans-serif;
+    font-size: 40px;
+}
+
+#card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.popup-message {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#message{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cardInfo{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.autocomplete-suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestions div:hover {
+    background-color: rgb(224, 191, 255);
+}
+
+#search:focus, #search:hover{
+    background-color: rgb(224, 191, 255);
+}
+
+.navBtn:hover{
+    background-color: rgb(224, 191, 255);
+}
+
+.pikachu{
+    width: 450px;
+}
+
+.headerText{
+    font-family: "Coiny", sans-serif;
+    color: white;
+    font-size: 65px;
+}
+
+.headerText2{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+.headerText3{
+    font-family: "Coiny", sans-serif;
+    color: white;
+    font-size: 50px;
+    margin-left: 5px;
+}
+
+.headerText4{
+    font-family: "Coiny", sans-serif;
+    color: rgb(140, 17, 255);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.footer{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+
+
+.displayedSets {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    font-family: "Roboto", sans-serif;
+    width: fit-content;
+}
+
+.sets1, .sets2, .sets3, .sets4, .sets5, .sets6, .sets7, .sets8, .sets9, .sets10, .sets11{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    font-family: "Roboto", sans-serif;
+    width: fit-content;
+}
+
+.setCard {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 250px;
+}
+
+.setCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+
+/* .setImageWrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+} */
+
+.setImageWrapper {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    background-color: white;
+}
+
+.setImage2{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.setImage {
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+}
+
+#collectionWrapper{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.removeBtn{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(140, 17, 255);
+    color: white;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+
+#setImage{
+    height: 300px;
+}
+
+#imageWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.setDetails {
+    padding: 15px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.setDetails2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.setName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(140, 17, 255);
+    font-family: "Roboto", sans-serif;
+}
+
+.setReleaseDate, .setCardCount {
+    font-size: 14px;
+    color: #777;
+}
+
+.browseContainer{
+    margin-top: 50px;
+}

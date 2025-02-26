@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéCard Vault - Search Results</title>
+    <link rel="icon" href="./images/pokeball.png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="search.js"></script>
+    <script defer src="searchResults.js"></script> <!-- Separate file to handle search results -->
+</head>
+<body>
+    <div class="mainContent">
+        <div class="frontPage">
+            <div class="navbar">
+                <button class="navBtn" onclick="window.location.href='index.html';">HOME</button>
+                <button class="navBtn" onclick="window.location.href='mycollection.html';">MY COLLECTION</button>
+                <button class="navBtn" onclick="window.location.href='browse.html';">BROWSE SETS</button>
+                <input type="text" name="search" id="search" placeholder="Search..." autocomplete="off">
+                <button class="navBtn" onclick="window.location.href='login.html';">LOG IN</button>
+            </div>
+                <h1>Search Results</h1>
+                <div id="search-query-display"></div>
+                <div class="informationContainer2" id="results-container"></div>            
+        </div>
+    </div>
+</body>
+</html>
