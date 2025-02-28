@@ -2,6 +2,7 @@
 body{
     margin: 0;
     background-color: white;
+    overflow-x: hidden;
 }
 
 .mainContent{
@@ -287,6 +288,47 @@ body{
     .navbar{
         height: 80px;
     }
+
+    .setDetails{
+        text-align: center !important;
+    }
+
+    .setName{
+        text-align: center !important;
+        width: fit-content;
+    }
+
+    .informationContainer2{
+        text-align: center;
+    }
+
+    #cards-container{
+        margin: 0;
+        gap: 0.2em !important;
+    }
+
+    .card-grid{
+        margin: 0;
+        gap: 0.2em !important;
+    }
+
+    #search-query-display{
+        width: 100vw;
+    }
+
+    .searchResultT{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    
+    .searchResultCount{
+        margin-top: 3.5em !important;
+        margin-left: -2.2em !important;
+    }
+
+    .cardInfoH{
+        margin-top: 1em !important;
+    }
 }
 
 #cards-container{
@@ -483,8 +525,8 @@ body{
 }
 
 .cardInfoH{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     color: white;
