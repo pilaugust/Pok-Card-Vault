@@ -707,7 +707,7 @@ html{
 }
 
 #collectionWrapper{
-    height: fit-content;
+    height: 27em;
     width: 15em;
     display: flex;
     flex-direction: column;
