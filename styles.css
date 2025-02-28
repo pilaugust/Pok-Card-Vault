@@ -708,7 +708,7 @@ html{
 
 #collectionWrapper{
     height: fit-content;
-    width: fit-content;
+    width: 15em;
     display: flex;
     flex-direction: column;
     justify-content: center;
