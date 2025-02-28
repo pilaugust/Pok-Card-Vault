@@ -308,6 +308,12 @@ body{
         margin-left: 0 !important;
     }
 
+    #results-container{
+        gap: 0.2em !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
     .card-grid{
         margin: 0;
         gap: 0.2em !important;
